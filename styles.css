@@ -81,6 +81,17 @@ h2 {
   font-family: 'Playfair Display', serif;
   
 }
+.inner-hero {
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f0f12, #16161d);
+}
+
+.inner-hero h1 {
+  font-size: 2.8rem;
+  color: #c3b5eb;
+  font-family: 'Playfair Display', serif;
+}
 
 /* BUTTONS */
 .cta {
