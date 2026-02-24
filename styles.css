@@ -163,3 +163,32 @@ h2 {
   }
 
 }
+.booking-form {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 20px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(200,196,196,0.1);
+  border-radius: 10px;
+  color: #c8c4c4;
+  font-family: 'Inter', sans-serif;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: #b680dc;
+}
