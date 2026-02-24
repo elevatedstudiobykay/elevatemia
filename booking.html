@@ -5,38 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Client Name | Booking</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="rates.html">Rates</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="booking.html">Booking</a>
-</nav>
-  
-  <!-- BOOKING PAGE -->
+    <a href="index.html">Home</a>
+    <a href="rates.html">Rates</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+  </nav>
 
-  <section class="booking-hero">
-    <h1>Booking Request</h1>
-    <p>Please complete the form below for screening.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Request Booking</h1>
+    <p>Discreet. Professional. Seamless.</p>
   </section>
 
+  <!-- BOOKING FORM -->
   <section class="booking-form">
     <form>
-      <input type="text" name="fullName" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="dateTime" placeholder="Requested Date & Time" required>
-      <textarea name="details" placeholder="Tell me about your request"></textarea>
-      <button type="submit">Submit Request</button>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Requested Date">
+      <input type="text" placeholder="Location">
+      <textarea placeholder="Tell me about your request..." rows="5"></textarea>
+      <button type="submit" class="cta">Submit Request</button>
     </form>
   </section>
 
-  <section class="cta-section">
-    <a href="index.html" class="secondary-cta">Back to Home</a>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
