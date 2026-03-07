@@ -1,0 +1,304 @@
+/* =========================================
+   ELEVATED FLAGSHIP SYSTEM — LIGHT • AIRY • FEMININE
+   ========================================= */
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   DEFAULT THEME (Soft Luxury Foundation)
+   ========================= */
+
+:root {
+  --body-font: 'Inter', sans-serif;
+  --heading-font: 'Cormorant Garamond', serif;
+
+  --background-color: #f8f6f2;
+  --surface-color: #ffffff;
+  --primary-color: #3a3a3a;
+  --accent-color: #c6a47e;
+  --muted-text: #8c8c8c;
+  --border-soft: rgba(0,0,0,0.05);
+  --button-text-color: #ffffff;
+}
+
+/* =========================
+   GLOBAL BODY
+   ========================= */
+
+body {
+  font-family: var(--body-font);
+  font-weight: 300;
+  background: var(--background-color);
+  color: var(--primary-color);
+  line-height: 1.8;              /* softer rhythm */
+  letter-spacing: 0.15px;        /* more natural */
+  overflow-x: hidden;
+
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--surface-color);
+  padding: 26px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 0 24px;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  opacity: 0.75;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: 3.4rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--muted-text);
+}
+
+/* =========================
+   SECTION BASE
+   ========================= */
+
+section {
+  padding: 120px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero + section {
+  padding-top: 60px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.card {
+  background: var(--surface-color);
+  padding: 50px;
+  border-radius: 24px;
+  border: 1px solid var(--border-soft);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-color);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.03);
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+
+.card .price {
+  font-weight: 400;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.card .details {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button-primary {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 38px;
+  background: var(--accent-color);
+  color: var(--button-text-color);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.button-primary:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   GALLERY
+   ========================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 22px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   FORM SYSTEM
+   ========================= */
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  font-family: inherit;
+  font-size: 15px;
+  background: var(--surface-color);
+  transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  padding: 120px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted-text);
+}
+
+/* =========================
+   SCROLL FADE
+   ========================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   HOME INTENT
+   ========================= */
+
+.home-intent {
+  padding: 160px 20px;
+  text-align: center;
+  background: var(--surface-color);
+}
+
+.home-intent-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-intent p {
+  color: var(--muted-text);
+  margin-top: 26px;
+}

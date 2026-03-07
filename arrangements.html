@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{CLIENT_NAME}} | Arrangements</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="arrangements.html">Arrangements</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="online-services.html">Online</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Arrangements</h1>
+      <p>{{ARRANGEMENT_INTRO_STATEMENT}}</p>
+
+      <p style="margin-top:15px; color: var(--muted-text);">
+        {{ARRANGEMENT_DISCRETION_NOTE}}
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ARRANGEMENTS GRID -->
+  <section>
+    <div class="card-grid">
+
+      <!-- ARRANGEMENT CARD 1 -->
+      <div class="card expandable">
+        <h3>{{ARRANGEMENT_TITLE_1}}</h3>
+        <div class="price">{{PRICE_1}}</div>
+        <button class="expand-btn">View Details</button>
+
+        <div class="expand-content">
+          <p>{{FULL_DESCRIPTION_1}}</p>
+          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_1}}</p>
+          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_1}}</p>
+        </div>
+      </div>
+
+      <!-- ARRANGEMENT CARD 2 -->
+      <div class="card expandable">
+        <h3>{{ARRANGEMENT_TITLE_2}}</h3>
+        <div class="price">{{PRICE_2}}</div>
+        <button class="expand-btn">View Details</button>
+
+        <div class="expand-content">
+          <p>{{FULL_DESCRIPTION_2}}</p>
+          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_2}}</p>
+          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_2}}</p>
+        </div>
+      </div>
+
+      <!-- ARRANGEMENT CARD 3 -->
+      <div class="card expandable">
+        <h3>{{ARRANGEMENT_TITLE_3}}</h3>
+        <div class="price">{{PRICE_3}}</div>
+        <button class="expand-btn">View Details</button>
+
+        <div class="expand-content">
+          <p>{{FULL_DESCRIPTION_3}}</p>
+          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_3}}</p>
+          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_3}}</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © {{YEAR}} {{CLIENT_NAME}}. All Rights Reserved.
+  </footer>
+
+  <script src="core.js"></script>
+<script src="demo-engine.js"></script>
+</body>
+</html>

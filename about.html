@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{CLIENT_NAME}} | About</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="arrangements.html">Arrangements</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="online-services.html">Online</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>About</h1>
+      <p>{{ABOUT_TAGLINE}}</p>
+    </div>
+  </section>
+
+  <section>
+
+    <div style="max-width: 750px; margin: 0 auto; text-align: center;">
+
+      <p style="margin-bottom: 30px;">
+        {{ABOUT_PARAGRAPH_1}}
+      </p>
+
+      <p style="margin-bottom: 30px;">
+        {{ABOUT_PARAGRAPH_2}}
+      </p>
+
+      <p>
+        {{ABOUT_PARAGRAPH_3}}
+      </p>
+
+    </div>
+
+  </section>
+
+  <section style="text-align:center;">
+
+    <h2>Standards</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>{{STANDARD_1_TITLE}}</h3>
+        <div class="details">
+          {{STANDARD_1_DESCRIPTION}}
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>{{STANDARD_2_TITLE}}</h3>
+        <div class="details">
+          {{STANDARD_2_DESCRIPTION}}
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>{{STANDARD_3_TITLE}}</h3>
+        <div class="details">
+          {{STANDARD_3_DESCRIPTION}}
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section style="text-align:center;">
+    <h2>Discretion & Alignment</h2>
+    <p style="max-width:600px; margin:0 auto;">
+      {{DISCRETION_STATEMENT}}
+    </p>
+    <a href="booking.html" class="button-primary">Submit Inquiry</a>
+  </section>
+
+  <footer>
+    © {{YEAR}} {{CLIENT_NAME}}. All Rights Reserved.
+  </footer>
+
+  <script src="core.js"></script>
+<script src="demo-engine.js"></script>
+</body>
+</html>

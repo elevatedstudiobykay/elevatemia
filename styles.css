@@ -1,0 +1,498 @@
+/* =========================================
+   ELEVATED FLAGSHIP SYSTEM — LIGHT LUXURY
+   ========================================= */
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   THEME VARIABLES
+   Swap ONLY these for client rebrand
+   ========================= */
+
+/* =========================
+   DEFAULT THEME (Light Luxury)
+   ========================= */
+
+:root {
+  --background-color: #f8f6f2;
+  --surface-color: #ffffff;
+  --primary-color: #1c1c1c;
+  --accent-color: #c6a47e;
+  --muted-text: #777;
+  --border-soft: rgba(0,0,0,0.08);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   DARK LUXURY THEME
+   ========================= */
+
+body.dark-theme {
+  --background-color: #111111;
+  --surface-color: #1c1c1c;
+  --primary-color: #f5f5f5;
+  --accent-color: #b48bff;
+  --muted-text: #aaa;
+  --border-soft: rgba(255,255,255,0.08);
+}
+
+/* =========================
+   SOFT FEMININE THEME
+   ========================= */
+
+body.soft-theme {
+  --background-color: #fff6f9;
+  --surface-color: #ffffff;
+  --primary-color: #2c2c2c;
+  --accent-color: #d88aa6;
+  --muted-text: #888;
+  --border-soft: rgba(0,0,0,0.05);
+}
+/* =========================
+   THEME 04 — MIDNIGHT EDITORIAL
+   ========================= */
+
+body.midnight-theme {
+  --background-color: #0c0c0f;
+  --surface-color: #16161b;
+  --primary-color: #f2f2f2;
+  --accent-color: #c4a15a;
+  --muted-text: #9a9a9a;
+  --border-soft: rgba(255,255,255,0.06);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   THEME 05 — CHAMPAGNE NEUTRAL
+   ========================= */
+
+body.champagne-theme {
+  --background-color: #f5efe6;
+  --surface-color: #ffffff;
+  --primary-color: #2d2d2d;
+  --accent-color: #b89b72;
+  --muted-text: #8b7f70;
+  --border-soft: rgba(0,0,0,0.06);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   THEME 06 — POWER MINIMAL
+   ========================= */
+
+body.power-theme {
+  --background-color: #ffffff;
+  --surface-color: #ffffff;
+  --primary-color: #111111;
+  --accent-color: #000000;
+  --muted-text: #666;
+  --border-soft: rgba(0,0,0,0.1);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   THEME 07 — ROSE NOIR
+   ========================= */
+
+body.rose-noir-theme {
+  --background-color: #1a0f14;
+  --surface-color: #23141b;
+  --primary-color: #f3e9ec;
+  --accent-color: #b04c72;
+  --muted-text: #a67a88;
+  --border-soft: rgba(255,255,255,0.05);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   EMERALD LUXE THEME
+   ========================= */
+
+body.emerald-theme {
+  --background-color: #0f1a16;
+  --surface-color: #16231f;
+  --primary-color: #f1f5f2;
+  --accent-color: #1f7a5c;
+  --muted-text: #9fb3aa;
+  --border-soft: rgba(255,255,255,0.08);
+}
+/* =========================
+   WARM NEUTRAL THEME
+   ========================= */
+
+body.warm-neutral-theme {
+  --background-color: #f3ede6;
+  --surface-color: #ffffff;
+  --primary-color: #3a332c;
+  --accent-color: #b58a5f;
+  --muted-text: #8c8175;
+  --border-soft: rgba(0,0,0,0.06);
+}
+
+/* =========================
+   FLIRTY MAUVE THEME (DEEP ROMANTIC)
+   ========================= */
+
+body.mauve-theme {
+  --background-color: #efe2e8;
+  --surface-color: #ffffff;
+  --primary-color: #2c1f25;
+  --accent-color: #8f4b63;
+  --muted-text: #735a63;
+  --border-soft: rgba(0,0,0,0.06);
+  --button-text-color: #ffffff;
+}
+/* =========================
+   GLOBAL BODY
+   ========================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background-color);
+  color: var(--primary-color);
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  overflow-x: hidden;
+
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--surface-color);
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 0 22px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted-text);
+}
+
+/* =========================
+   SECTION BASE
+   ========================= */
+
+section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero + section {
+  padding-top: 40px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.2rem;
+}
+
+/* =========================
+   CARDS (Reusable System)
+   ========================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: var(--surface-color);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+.card .price {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+   
+}
+
+.card .details {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button-primary {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 36px;
+  background: var(--accent-color);
+  color: var(--button-text-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.button-primary:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   GALLERY GRID
+   ========================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   FORM SYSTEM
+   ========================= */
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* =========================
+   EXPANDABLE CARD SYSTEM
+   ========================= */
+
+.expand-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  color: var(--accent-color);
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.expand-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 15px;
+  color: var(--muted-text);
+}
+
+.card.active .expand-content {
+  max-height: 500px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  font-family: inherit;
+  font-size: 15px;
+  background: var(--surface-color);
+  transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted-text);
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 12px;
+  }
+
+}
+/* =========================
+   SCROLL FADE ANIMATION
+   ========================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.home-intent {
+  padding: 120px 20px;
+  text-align: center;
+  background: var(--surface-color);
+}
+
+.home-intent-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-intent p {
+  color: var(--muted-text);
+  margin-top: 20px;
+}
+
+/* =========================
+   LUXURY THEME PREVIEW SWITCHER
+   ========================= */
+
+.theme-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--border-soft);
+  padding: 8px 14px;
+  border-radius: 40px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  z-index: 2000;
+}
+
+.theme-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin-right: 6px;
+}
+
+.swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--surface-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.swatch:hover {
+  transform: scale(1.15);
+}
+
+/* Active Swatch State */
+.swatch.active {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
