@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{CLIENT_NAME}} | Arrangements</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="core.css">
+<title>Mia Nova | Arrangements</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="core.css">
 <link rel="stylesheet" href="identities.css">
+
 </head>
 
-<body>
+<body class="rose-noir-theme">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="arrangements.html">Arrangements</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="online-services.html">Online</a>
-    <a href="booking.html">Booking</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="arrangements.html">Arrangements</a>
+<a href="gallery.html">Gallery</a>
+<a href="online-services.html">Online</a>
+<a href="booking.html">Booking</a>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Arrangements</h1>
-      <p>{{ARRANGEMENT_INTRO_STATEMENT}}</p>
+<section class="hero">
+<div class="hero-inner">
 
-      <p style="margin-top:15px; color: var(--muted-text);">
-        {{ARRANGEMENT_DISCRETION_NOTE}}
-      </p>
+<h1>Arrangements</h1>
 
-    </div>
-  </section>
+<p>
+Time shared together should feel effortless, engaging, and memorable. Below are the most commonly requested arrangements.
+</p>
 
-  <!-- ARRANGEMENTS GRID -->
-  <section>
-    <div class="card-grid">
+</div>
+</section>
 
-      <!-- ARRANGEMENT CARD 1 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_1}}</h3>
-        <div class="price">{{PRICE_1}}</div>
-        <button class="expand-btn">View Details</button>
+<section>
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_1}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_1}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_1}}</p>
-        </div>
-      </div>
+<div class="card-grid">
 
-      <!-- ARRANGEMENT CARD 2 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_2}}</h3>
-        <div class="price">{{PRICE_2}}</div>
-        <button class="expand-btn">View Details</button>
+<div class="card">
+<h3>Private Introduction</h3>
+<div class="price">$600 / hour</div>
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_2}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_2}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_2}}</p>
-        </div>
-      </div>
+<div class="details">
+A relaxed first meeting designed to establish chemistry and comfort. Perfect for drinks, conversation, and getting to know one another in an elegant setting.
+</div>
 
-      <!-- ARRANGEMENT CARD 3 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_3}}</h3>
-        <div class="price">{{PRICE_3}}</div>
-        <button class="expand-btn">View Details</button>
+</div>
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_3}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_3}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_3}}</p>
-        </div>
-      </div>
 
-    </div>
-  </section>
+<div class="card">
+<h3>Dinner Date</h3>
+<div class="price">$1500</div>
 
-  <footer>
-    © {{YEAR}} {{CLIENT_NAME}}. All Rights Reserved.
-  </footer>
+<div class="details">
+An evening designed for connection and shared experience. Whether enjoying a refined dinner or exploring the city together, expect engaging conversation and effortless company.
+</div>
 
-  <script src="core.js"></script>
-<script src="demo-engine.js"></script>
+</div>
+
+
+<div class="card">
+<h3>Overnight Experience</h3>
+<div class="price">$4500</div>
+
+<div class="details">
+An unhurried evening that allows us to truly relax and enjoy one another's company. Perfect for travel companions, extended evenings, or those who value a deeper connection.
+</div>
+
+</div>
+
+
+<div class="card">
+<h3>Fly Me To You</h3>
+<div class="price">Custom Arrangement</div>
+
+<div class="details">
+For those wishing to enjoy my company outside of my home city. Travel arrangements can be discussed privately and tailored to your itinerary.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="text-align:center;">
+
+<h2>Discretion & Courtesy</h2>
+
+<p style="max-width:600px; margin:0 auto;">
+All arrangements are handled personally and with complete discretion. Please review the booking page when submitting your inquiry so I can ensure a smooth and enjoyable experience for both of us.
+</p>
+
+<a href="booking.html" class="button-primary">Submit Inquiry</a>
+
+</section>
+
+<footer>
+© 2026 Mia Nova. All Rights Reserved.
+</footer>
+
+<script src="core.js"></script>
+
 </body>
 </html>
